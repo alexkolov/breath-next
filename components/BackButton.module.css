@@ -1,6 +1,5 @@
 .link {
   display: inline-block;
-  color: red;
   @apply fixed;
   top: 2rem;
   left: 0.5rem;

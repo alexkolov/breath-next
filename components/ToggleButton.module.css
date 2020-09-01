@@ -1,0 +1,16 @@
+.Host {
+  @apply flex justify-center w-full;
+  @apply pb-6;
+}
+
+.Toggle {
+  @apply bg-gray-300 rounded-full p-2 inline-flex justify-start items-stretch;
+}
+
+.Toggle:hover {
+  @apply bg-gray-400;
+}
+
+.Toggle svg {
+  @apply h-16 w-16;
+}
