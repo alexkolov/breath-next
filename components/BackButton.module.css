@@ -1,0 +1,19 @@
+.link {
+  display: inline-block;
+  color: red;
+  @apply fixed;
+  top: 2rem;
+  left: 0.5rem;
+  @apply h-12 w-12;
+}
+
+.icon {
+  height: 100%;
+  width: 100%;
+}
+
+@screen md {
+  .link {
+    @apply h-20 w-20;
+  }
+}
