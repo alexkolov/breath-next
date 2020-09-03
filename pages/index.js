@@ -1,6 +1,8 @@
 import Link from 'next/link'
 import Head from 'next/head';
 import { useSession } from 'next-auth/client';
+import { Header } from '../components/Header';
+import { Footer } from '../components/Footer';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
@@ -13,12 +15,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
+      <Header name={session?.user.name} />
+
       <main className={styles.main}>
 
         <div>Loading: {String(loading)}</div>
 
         <>
-        {session && <p>Signed in as {session.user.email}</p>}
+        {session && <p>Signed in as {session.user.name}</p>}
         {!session && <p><a href="/api/auth/signin">Sign in</a></p>}
         </>
 
@@ -53,9 +57,7 @@ export default function Home() {
         </div>
       </main>
 
-      <footer className={styles.footer}>
-        Copyright © 2020 by Alex Kolov
-      </footer>
+      <Footer />
     </div>
   )
 }

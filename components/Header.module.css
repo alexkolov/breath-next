@@ -1,0 +1,12 @@
+.Header {
+  @apply fixed inset-x-0 top-0;
+  @apply h-16 w-full;
+  @apply bg-gray-300;
+  @apply border-b-2 border-gray-400;
+  @apply flex justify-between items-center;
+}
+
+.Logo {
+  @apply p-2;
+  @apply text-2xl;
+}

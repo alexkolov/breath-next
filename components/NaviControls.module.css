@@ -1,0 +1,8 @@
+.NaviControls {
+  @apply flex justify-between items-center;
+  @apply p-2;
+}
+
+.LogoutButton {
+  @apply h-8 w-8 ml-2;
+}

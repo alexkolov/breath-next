@@ -21,6 +21,5 @@ export function BackButton() {
         </svg>
       </a>
     </Link>
-  )
+  );
 }
-

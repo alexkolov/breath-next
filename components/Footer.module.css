@@ -1,0 +1,6 @@
+.Footer {
+  @apply h-16 w-full;
+  @apply bg-gray-300;
+  @apply border-t-2 border-gray-400;
+  @apply flex justify-center items-center;
+}
