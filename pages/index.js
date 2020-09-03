@@ -22,15 +22,6 @@ export default function Home() {
         {!session && <p><a href="/api/auth/signin">Sign in</a></p>}
         </>
 
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
         <div className={styles.grid}>
           <Link href="/exercise">
             <a className={styles.card}>
@@ -45,18 +36,25 @@ export default function Home() {
               <p>Edit your programs</p>
             </a>
           </Link>
+
+          <Link href="/help">
+            <a className={styles.card}>
+              <h3>Help &rarr;</h3>
+              <p>Need some help?</p>
+            </a>
+          </Link>
+
+          <Link href="/about">
+            <a className={styles.card}>
+              <h3>About &rarr;</h3>
+              <p>What is breath next?</p>
+            </a>
+          </Link>
         </div>
       </main>
 
       <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
+        Copyright © 2020 by Alex Kolov
       </footer>
     </div>
   )
